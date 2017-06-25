@@ -1,0 +1,14 @@
+{
+  "subject": "Subject",
+  "full_name": "John Doe",
+  "street": "Fake Street 5",
+  "zip": "4444",
+  "city": "Beverly Hills",
+  "email": "",
+  "phone": "",
+  "to_org": "",
+  "to_full_name": "Jane Doe",
+  "to_address": "Fake Street 6",
+  "to_zip_province": "4444 Beverly Hills",
+  "to_full_address": "{{ (cookiecutter.to_org + '\\\\\\\\' if cookiecutter.to_org != '' else '') + cookiecutter.full_name + '\\\\\\\\' + cookiecutter.to_address + '\\\\\\\\' + cookiecutter.to_zip + ' ' + cookiecutter.to_city }}"
+}
